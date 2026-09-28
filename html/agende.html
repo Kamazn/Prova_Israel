@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agende sua Prova</title>
+</head>
+
+<body>
+    <header>
+        <h1>Calendario de Provas - Unipe</h1>
+        <img src="/img/unipe.png" width="300" alt="Logo do Unipe">
+    </header>
+    <nav>
+        <h2>Navegue na nossa pagina</h2>
+        <details>
+            <summary>
+                Menu
+            </summary>
+            <a href="/html/main.html">Pagina Principal</a><br>
+            <a href="/html/segunda.html">Segunda</a><br>
+            <a href="/html/terça.html">Terça</a><br>
+            <a href="/html/quarta.html">Quarta</a><br>
+            <a href="/html/agende.html">Agende sua Prova</a><br>
+        </details>
+    </nav>
+    <main>
+        <section>
+            <article>
+                <h2>Agendamento de Prova</h2>
+                <p>Preencha o formulario abaixo para solicitar o agendamento da sua prova.</p>
+            </article>
+        </section>
+
+        <!-- Tive dificuldade para organizar os campos do formulario -->
+        <section>
+            <article>
+                <h2>Formulario</h2>
+                <form>
+                    <fieldset>
+                        <legend>Agendamento de Prova</legend>
+
+                        <label for="nome">Nome:</label><br>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br><br>
+
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" placeholder="Digite seu email" required><br><br>
+
+                        <label for="matricula">Matricula:</label><br>
+                        <input type="text" id="matricula" name="matricula" placeholder="Digite sua matricula"
+                            required><br><br>
+
+                        <label for="disciplina">Disciplina:</label><br>
+                        <input list="disciplinas" id="disciplina" name="disciplina" placeholder="Escolha a disciplina"
+                            required>
+
+                        <datalist id="disciplinas">
+                            <option value="HTML">
+                            <option value="Modelagem de Banco de Dados">
+                            <option value="Linguagem C">
+                        </datalist><br><br>
+
+                        <label for="data">Data da Prova:</label><br>
+                        <input type="date" id="data" name="data" required><br><br>
+
+                        <label for="opiniao">O que voce acha da prova?</label><br>
+                        <input type="range" id="opiniao" name="opiniao" min="0" max="10"><br>
+                        <small>0 = Muito facil | 10 = Muito dificil</small><br><br>
+
+                        <label for="arquivo">Envie uma foto ou arquivo do seu RG:</label><br>
+                        <input type="file" id="arquivo" name="arquivo"><br><br>
+
+                        <label for="observacao">Observação:</label><br>
+                        <textarea id="observacao" name="observacao"
+                            placeholder="Digite alguma observacao sobre o agendamento"></textarea><br><br>
+
+                        <input type="submit" value="Agendar Prova">
+                        <input type="reset" value="Limpar">
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+        <aside>
+            <h3>Informacões</h3>
+            <p>Confira todos os dados antes de enviar o formulario de agendamento.</p>
+            <hr>
+        </aside>
+    </main>
+    <footer>
+        <p>Feito por João Gabriel em HTML - 2026</p>
+    </footer>
+</body>
+</html>

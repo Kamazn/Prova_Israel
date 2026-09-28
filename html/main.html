@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Principal</title>
+</head>
+<body>
+    <header>
+        <h1>Calendario de Provas - Unipe</h1>
+        <img src="/img/unipe.png" width="300" alt="Logo do Unipe">
+    </header>
+    <nav>
+        <h2>Navegue na nossa pagina</h2>
+        <details>
+            <summary>
+                Menu
+            </summary>
+            <a href="/html/main.html">Pagina Principal</a><br>
+            <a href="/html/segunda.html">Segunda</a><br>
+            <a href="/html/terça.html">Terça</a><br>
+            <a href="/html/quarta.html">Quarta</a><br>
+            <a href="/html/agende.html">Agende sua Prova</a><br>
+        </details>
+    </nav>
+    <main>
+        <section>
+            <article>
+                <h2>Sobre a Pagina</h2>
+                <p>Esta pagina foi criada para ajudar os alunos da Unipe a consultar informações sobre suas provas, como datas, disciplinas e conteudos, alem de permitir o agendamento de provas.</p>
+                <p>O objetivo é reunir as principais informações em um unico lugar, facilitando a organização dos estudos e o acompanhamento das avaliações.</p>
+            </article>
+        </section>
+
+        <!-- Tive dificuldade para organizar a tabela e entender como usa o colspan corretamente -->
+        <section>
+            <article>
+                <h2>Sobre as Provas</h2>
+                <table border="2">
+                    <thead>
+                        <tr>
+                            <th>Dia</th>
+                            <th>Materia</th>
+                            <th>Data</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Segunda</td>
+                            <td colspan="2">HTML - 28/09/2026</td>
+                        </tr>
+                        <tr>
+                            <td>Terça</td>
+                            <td colspan="2">Banco de Dados - 29/09/2026</td>
+                        </tr>
+                        <tr>
+                            <td>Quarta</td>
+                            <td colspan="2">Linguagem C - 30/09/2026</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+        <aside>
+            <h3>Duvida sobre agendamento?</h3>
+            <p>Caso queira agendar sua prova, acesse <a href="/agende.html">Agendar</a>.</p>
+            <hr>
+        </aside>
+    </main>
+    <footer>
+        <p>Feito por João Gabriel em HTML - 2026</p>
+    </footer>
+</body>
+</html>
