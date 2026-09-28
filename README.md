@@ -1,6 +1,4 @@
-# Prova_Israel
-
-# Calendário de Provas - Unipê
+# Calendário de Provas - Unipê (Prova Israel)
 
 Este projeto foi desenvolvido para a prova de HTML com o objetivo de criar um site simples para consultar informações sobre provas e realizar agendamentos.
 
